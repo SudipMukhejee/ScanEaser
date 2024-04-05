@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-[90%] mx-auto flex flex-col items-center">
+    <nav className="w-[80%] mx-auto flex flex-col items-center mt-5">
       <div className="flex justify-between pt-5 pb-8 items-center lg:border-b-2 border-b-white/30 w-full lg:hover:pb-10 duration-300 ">
         <h1 className="text-white text-4xl text-center font-bold italic">
           SightSpeak
