@@ -7,27 +7,23 @@ const Navbar = () => {
   const NavLinks = [
     {
       id: 1,
-      link: "Home",
+      link: "HOME",
     },
     {
       id: 2,
-      link: "About",
+      link: "ABOUT",
     },
     {
       id: 3,
-      link: "OCR Tool",
+      link: "UNKNOWN",
     },
     {
       id: 4,
-      link: "How it works",
+      link: "UNKNOWN",
     },
     {
       id: 5,
-      link: "Demo",
-    },
-    {
-      id: 6,
-      link: "Features",
+      link: "FEATURE",
     },
   ];
 
@@ -35,7 +31,7 @@ const Navbar = () => {
     <nav className="w-[80%] mx-auto flex flex-col items-center mt-5">
       <div className="flex justify-between pt-5 pb-8 items-center lg:border-b-2 border-b-white/30 w-full lg:hover:pb-10 duration-300 ">
         <h1 className="text-white text-4xl text-center font-bold italic">
-          SightSpeak
+          SIGHT SPEAK
         </h1>
         <ul className="hidden lg:flex justify-center items-center gap-x-5  ">
           {NavLinks.map(({ id, link }) => (
