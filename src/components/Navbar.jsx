@@ -12,23 +12,23 @@ const Navbar = () => {
       id: 1,
       link: "HOME",
       path: "/",
-      component: Home,
+      component: <Home/>,
     },
     {
       id: 2,
       link: "ABOUT",
       path: "/about",
-      component: About,
+      component: <About/>,
     },
     {
       id: 3,
       link: "FEATURE",
       path: "/feature",
-      component: Feature,
+      component: <Feature/>,
     },
   ];
   const handelclick = () => {
-    console.log("Hello I am click");
+    // console.log("Hello I am click");
     setNav(!nav);
   };
 
@@ -90,7 +90,7 @@ const Navbar = () => {
       </nav>
       <Routes>
         {NavLinks.map(({ id, path, component }) => (
-          <Route key={id} path={path} element={<component />} />
+          <Route key={id} path={path} element={component} />
         ))}
       </Routes>
     </Router>
