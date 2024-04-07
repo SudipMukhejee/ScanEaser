@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from 'react';
 import { gsap } from "gsap";
 import Scroll from "./Scroll";
 
 import "../full.css";
-
+import "./style.css"
 const Home = () => {
+   const [fileName, setFileName] = useState('');
+   const [email, setEmail] = useState('');
+   
+   const handleFileChange = (event) => {
+     const file = event.target.files[0];
+     setFileName(file.name);
+   };
+   
+   const handleEmailChange = (event) => {
+     setEmail(event.target.value);
+   };
    const handleClick = () => {
       var page3Center = document.querySelector(".page3-center");
       var video = document.querySelector("#page3 video");
@@ -53,7 +64,7 @@ const Home = () => {
                alignItems: "center",
                justifyContent: "center",
                position: "relative",
-               marginTop: "500px",
+               marginTop: "750px",
             }}>
             <h1
                style={{
@@ -196,6 +207,40 @@ const Home = () => {
                <h5>Watch Showreel</h5>
             </button>
          </div>
+         <div className="container">
+      <div className="card">
+        <h3>Upload Files</h3>
+        <div className="drop_box">
+          {fileName ? (
+            <div className="form">
+              <h4>{fileName}</h4>
+              <input
+                type="email"
+                placeholder="Enter email to upload file"
+                value={email}
+                onChange={handleEmailChange}
+              />
+              <button className="btn">Upload</button>
+            </div>
+          ) : (
+            <>
+              <header>
+                <h4>Select File here</h4>
+              </header>
+              <p>Files Supported: PDF, TEXT, DOC, DOCX</p>
+              <input
+                type="file"
+                accept=".doc,.docx,.pdf"
+                id="fileID"
+                style={{ display: 'none' }}
+                onChange={handleFileChange}
+              />
+              <label htmlFor="fileID" className="btn">Choose File</label>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
       </div>
    );
 };
