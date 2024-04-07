@@ -66,35 +66,44 @@ const Home = () => {
                position: "relative",
                marginTop: "750px",
             }}>
-            <h1
-               style={{
-                  fontSize: "7vw",
-                  display: "flex",
-                  textTransform: "uppercase",
-                  fontWeight: "900",
-                  lineHeight: "5vw",
+            <h1 
+            style={{
+               fontSize: '7vw',
+               display:'flex', 
+               textTransform: 'uppercase',
+               fontWeight: '900', 
+               lineHeight: '5vw'
                }}>
-               Empowering Thr
-               <span className="">
-                  <svg
-                     className="c-bttn__morph "
-                     fill="none"
-                     viewBox="0 0 131 136"
-                     style={{
-                        height: "5vw",
-                        borderRadius: "50%",
-                        width: "5vw",
-                        backgroundColor: "#0BA34E",
-                        hover: "transform: rotate(20deg)",
+               Empowering Thr                                                 
+                  <span 
+                  id="icon1" 
+                  className=""
+                  style={{
+                     height: '5vw',
+                     display:'flex', 
+                     alignItems:'center', 
+                     borderRadius: '50%', 
+                     width: '5vw', 
+                     backgroundColor: '#0BA34E'
                      }}>
-                     <path
-                        class="g-path"
-                        data-morph="end"
-                        fill="#fff"
-                        d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"></path>
+                  <svg
+                    fill="none"
+                    viewBox="0 0 20 20"
+                    style={{  
+                     padding:'auto', 
+                     margin:'auto', 
+                     alignItems:'center',
+                     borderRadius: '50%' 
+                     }}
+                     className="p-auto m-auto items-center bg-green-600 rounded-full hover:rotate-12"
+                    >
+                  <path
+                     fill="#fff"
+                     d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z"
+                  ></path>
                   </svg>
                </span>
-               ugh
+                  ugh
             </h1>
             <h1
                style={{
