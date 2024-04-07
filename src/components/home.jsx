@@ -167,36 +167,35 @@ const Home = () => {
                <br />
                <br />
             </div>
-            <div id='page2'>
-                  <Scroll />
-            </div>
-
-            <div
-               id="page3"
-               style={{
-                  marginTop: "50px",
-                  width: "100%",
-                  height: "5000px",
-                  //  need mediaquar here
-                  backgroundColor: "#111",
-                  position: "relative",
-                  backgroundImage:
-                     "url(https://lazarev.kiev.ua/la24/reel-cover.webp)",
-                  backgrounSize: "cover",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-               }}>
-               <video src="https://lazarev.kiev.ua/la24/la-reel--min.mp4"></video>
-               <button className="page3-center" onClick={handleClick}>
-                  <div className="icon">
-                     <i className="ri-play-fill"></i>
-                  </div>
-                  <h5>Watch Showreel</h5>
-               </button>
-            </div>
          </div>
-         
+         <div id="page2">
+            <Scroll />
+         </div>
+
+         <div
+            id="page3"
+            style={{
+               marginTop: "50px",
+               width: "100%",
+               height: "5000px",
+               //  need mediaquar here
+               backgroundColor: "#111",
+               position: "relative",
+               backgroundImage:
+                  "url(https://lazarev.kiev.ua/la24/reel-cover.webp)",
+               backgrounSize: "cover",
+               display: "flex",
+               alignItems: "center",
+               justifyContent: "center",
+            }}>
+            <video src="https://lazarev.kiev.ua/la24/la-reel--min.mp4"></video>
+            <button className="page3-center" onClick={handleClick}>
+               <div className="icon">
+                  <i className="ri-play-fill"></i>
+               </div>
+               <h5>Watch Showreel</h5>
+            </button>
+         </div>
       </div>
    );
 };
