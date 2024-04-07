@@ -1,36 +1,160 @@
-
-import React from 'react';
+import React from "react";
+import { ScrollBar } from "./ScrollBar";
+import "../full.css";
 
 const Home = () => {
-    return (
-        <div id="main" className='text-white' style={{height: '100vh', width: '100%', backgroundColor: '#111', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-            <div id="page1" style={{height: '100vh', width: '100%', backgroundColor: '#111', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-                <h1 style={{fontSize: '7vw',display:'flex', textTransform: 'uppercase', fontWeight: '900', lineHeight: '5vw'}}>
-                Empowering Thr
-                    <span  className="">
-                        <svg className="c-bttn__morph" fill="none" viewBox="0 0 131 136" style={{height: '6vw', borderRadius: '50%', width: '6vw', backgroundColor: '#0BA34E'}}>
-                            <path class="g-path" data-morph="end" fill="#fff"
-                                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z">
-                            </path>
-                            <path class="g-path" data-morph="start" fill="#fff"
-                                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
-                                data-original="M65.72 109.14c10.08 0 17.76-3.78 23.04-11.34 5.4-7.68 8.1-17.64 8.1-29.88 0-12.24-2.7-22.2-8.1-29.88-5.28-7.68-12.96-11.52-23.04-11.52-9.96 0-17.7 3.84-23.22 11.52-5.4 7.68-8.1 17.64-8.1 29.88 0 12.12 2.7 22.02 8.1 29.7 5.52 7.68 13.26 11.52 23.22 11.52Zm46.08 7.02c-11.64 12.6-27.06 18.9-46.26 18.9s-34.62-6.3-46.26-18.9C7.76 103.56 2 87.48 2 67.92c0-19.56 5.76-35.64 17.28-48.24C30.92 7.08 46.34.78 65.54.78s34.62 6.3 46.26 18.9c11.64 12.6 17.46 28.68 17.46 48.24 0 19.56-5.82 35.64-17.46 48.24Z">
-                            </path>
-                        </svg>
-                    </span>
-                    ugh
-                </h1>
-                <h1 style={{fontSize: '8.5vw', textTransform: 'uppercase', fontWeight: '900', lineHeight: '8.5vw'}}>Visual Language.</h1>
-                <p style={{textAlign: 'center', fontWeight: '400', marginTop: '3vh', fontSize: '1vw'}}>We partner with AI & ML businesses, guiding them from series A <br/>to series D and beyond with our expertise in </p>
-                <div id="page1-something" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>Brand design</h4>
-                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>User Experience</h4>
-                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>and</h4>
-                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>Digital product design</h4>.
-                </div>
+   const handleClick = () => {
+      //fetch the data and call the vedio and render the vedio
+      console.log("clicked video play");
+   };
+   return (
+      <di
+         id="main "
+         className="text-white"
+         style={{
+            height: "100vh",
+            width: "100%",
+            backgroundColor: "#111",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            marginTop: "260px",
 
+            //core css resive design write media query
+         }}>
+         <div
+            id="page1"
+            style={{
+               height: "100vh",
+               width: "100%",
+               backgroundColor: "#111",
+               display: "flex",
+               flexDirection: "column",
+               alignItems: "center",
+               justifyContent: "center",
+               position: "relative",
+            }}>
+            <h1
+               style={{
+                  fontSize: "7vw",
+                  display: "flex",
+                  textTransform: "uppercase",
+                  fontWeight: "900",
+                  lineHeight: "5vw",
+               }}>
+               Empowering Thr
+               <span className="">
+                  <svg
+                     className="c-bttn__morph "
+                     fill="none"
+                     viewBox="0 0 131 136"
+                     style={{
+                        height: "5vw",
+                        borderRadius: "50%",
+                        width: "5vw",
+                        backgroundColor: "#0BA34E",
+                        hover:  "transform: rotate(20deg)",
+                     }}>
+                     <path
+                        class="g-path"
+                        data-morph="end"
+                        fill="#fff"
+                        d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"></path>
+                  </svg>
+               </span>
+               ugh
+            </h1>
+            <h1
+               style={{
+                  fontSize: "8.5vw",
+                  textTransform: "uppercase",
+                  fontWeight: "900",
+                  lineHeight: "8.5vw",
+               }}>
+               Visual Language.
+            </h1>
+            <p
+               style={{
+                  textAlign: "center",
+                  fontWeight: "400",
+                  marginTop: "3vh",
+                  fontSize: "1.8rem",
+                  padding: "10px",
+               }}>
+               We partner with AI & ML businesses, guiding them from series A{" "}
+               <br />
+               to series D and beyond with our expertise in{" "}
+            </p>
+            <div
+               id="page1-something"
+               style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+               }}>
+               <h4
+                  style={{
+                     fontWeight: "400",
+                     fontSize: "1vw",
+                     textTransform: "lowercase",
+                     marginTop: "0.5vw",
+                     padding: "9px 18px",
+                     border: "1px solid hsl(0, 0%, 65%)",
+                     borderRadius: "50px",
+                     marginRight: "8px",
+                  }}>
+                  Brand design
+               </h4>
+               <h4
+                  style={{
+                     fontWeight: "400",
+                     fontSize: "1vw",
+                     textTransform: "lowercase",
+                     marginTop: "0.5vw",
+                     padding: "9px 18px",
+                     border: "1px solid hsl(0, 0%, 65%)",
+                     borderRadius: "50px",
+                  }}>
+                  User Experience
+               </h4>
+               <h4
+                  style={{
+                     fontWeight: "400",
+                     fontSize: "1vw",
+                     textTransform: "lowercase",
+                     marginTop: "0.5vw",
+                     padding: "9px 8px",
+                  }}>
+                  and
+               </h4>
+               <h4
+                  style={{
+                     fontWeight: "400",
+                     fontSize: "1vw",
+                     textTransform: "lowercase",
+                     marginTop: "0.5vw",
+                     padding: "9px 18px",
+                     border: "1px solid hsl(0, 0%, 65%)",
+                     borderRadius: "50px",
+                  }}>
+                  Digital product design
+               </h4>
             </div>
-        </div>
-    );
-}
+            <div>{/*<ScrollBar />*/}</div>
+
+            <div id="page3" style={{ marginTop: "50px" }}>
+               <video src="https://lazarev.kiev.ua/la24/la-reel--min.mp4"></video>
+               <button className="page3-center" onClick={handleClick}>
+                  <div className="icon">
+                     <i className="ri-play-fill"></i>
+                  </div>
+                  <h5>Watch Showreel</h5>
+               </button>
+            </div>
+         </div>
+      </di>
+   );
+};
 export default Home;
