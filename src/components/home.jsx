@@ -4,9 +4,9 @@ const Home = () => {
     return (
         <div id="main" className='text-white' style={{height: '100vh', width: '100%', backgroundColor: '#111', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
             <div id="page1" style={{height: '100vh', width: '100%', backgroundColor: '#111', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
-                <h1 style={{fontSize: '8.5vw', textTransform: 'uppercase', fontWeight: '900', lineHeight: '8.5vw'}}>
-                    AI & ML PR
-                    <span>
+                <h1 style={{fontSize: '7vw',display:'flex', textTransform: 'uppercase', fontWeight: '900', lineHeight: '5vw'}}>
+                Empowering Thr
+                    <span  className="">
                         <svg className="c-bttn__morph" fill="none" viewBox="0 0 131 136" style={{height: '6vw', borderRadius: '50%', width: '6vw', backgroundColor: '#0BA34E'}}>
                             <path class="g-path" data-morph="end" fill="#fff"
                                 d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z">
@@ -17,9 +17,9 @@ const Home = () => {
                             </path>
                         </svg>
                     </span>
-                    oduct
+                    ugh
                 </h1>
-                <h1 style={{fontSize: '8.5vw', textTransform: 'uppercase', fontWeight: '900', lineHeight: '8.5vw'}}>DESIGN Agency</h1>
+                <h1 style={{fontSize: '8.5vw', textTransform: 'uppercase', fontWeight: '900', lineHeight: '8.5vw'}}>Visual Language.</h1>
                 <p style={{textAlign: 'center', fontWeight: '400', marginTop: '3vh', fontSize: '1vw'}}>We partner with AI & ML businesses, guiding them from series A <br/>to series D and beyond with our expertise in </p>
                 <div id="page1-something" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                     <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>Brand design</h4>
