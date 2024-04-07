@@ -1,12 +1,36 @@
-// Home.js
-import React from "react";
+import React from 'react';
 
 const Home = () => {
-  return (
-    <div className="text-white w-[80%] mx-auto">
-     <p className="mt-10 px-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis necessitatibus quod quia repudiandae ducimus saepe neque error voluptatibus quo voluptates. Deleniti voluptatibus beatae quia laudantium facere illo. Esse, consequuntur non! Nulla debitis, fuga velit eveniet quos iure omnis corrupti maiores exercitationem sed fugiat provident quia magnam similique consequatur error a quod quisquam commodi quae? Suscipit dolor ad dicta laudantium dolores quae, tempora voluptatem deserunt vel consectetur placeat expedita accusamus culpa fugiat autem aliquid ullam voluptatum corporis dolorum? Culpa reiciendis molestias id maiores explicabo porro aliquam perspiciatis vitae odit delectus eveniet magnam, aperiam quas nulla deleniti eos quos beatae dolore eaque cumque quaerat sunt modi dolores! Quasi necessitatibus dolorem odio repudiandae quaerat. Eligendi beatae laboriosam corrupti eos, laudantium consequuntur minus nisi fuga ad. Voluptatum dolorem corrupti suscipit doloremque voluptas quis illo modi maiores vitae, eligendi natus, rem reprehenderit accusamus eum minima nobis. Dolores architecto ea delectus, nam, quas non molestiae quisquam fugit blanditiis dolore suscipit ad quia autem aspernatur id a, quibusdam expedita. Vero nulla illo odio quam libero laudantium a laborum ipsam ab earum eligendi animi, aspernatur, eaque, amet et necessitatibus ipsum sed enim eum nostrum dolore iusto quae commodi? In, excepturi. Possimus natus sapiente alias exercitationem itaque doloribus facilis sint, officiis dolores. Ut quisquam qui tempora quaerat animi recusandae at nisi consectetur. Eligendi eveniet id, minus quam repellendus dolorem placeat voluptatem mollitia inventore similique reprehenderit tempore in nemo molestiae rem necessitatibus facilis commodi. In magni soluta maxime reiciendis earum voluptate voluptatibus quam dolorum! Possimus impedit iure aliquam perferendis distinctio cumque nobis voluptate, sapiente mollitia quasi! Illum recusandae quas nostrum iure voluptatum deleniti in rem dolores doloribus. Dicta excepturi facilis error quo expedita aut optio! Mollitia veritatis ipsa exercitationem, incidunt non accusantium qui totam possimus obcaecati inventore, consectetur enim autem eligendi eius similique sit quo, impedit ratione facere nobis praesentium.</p>
-    </div>
-  );
+    return (
+        <div id="main" className='text-white' style={{height: '100vh', width: '100%', backgroundColor: '#111', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+            <div id="page1" style={{height: '100vh', width: '100%', backgroundColor: '#111', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+                <h1 style={{fontSize: '8.5vw', textTransform: 'uppercase', fontWeight: '900', lineHeight: '8.5vw'}}>
+                    AI & ML PR
+                    <span>
+                        <svg className="c-bttn__morph" fill="none" viewBox="0 0 131 136" style={{height: '6vw', borderRadius: '50%', width: '6vw', backgroundColor: '#0BA34E'}}>
+                            <path class="g-path" data-morph="end" fill="#fff"
+                                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z">
+                            </path>
+                            <path class="g-path" data-morph="start" fill="#fff"
+                                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
+                                data-original="M65.72 109.14c10.08 0 17.76-3.78 23.04-11.34 5.4-7.68 8.1-17.64 8.1-29.88 0-12.24-2.7-22.2-8.1-29.88-5.28-7.68-12.96-11.52-23.04-11.52-9.96 0-17.7 3.84-23.22 11.52-5.4 7.68-8.1 17.64-8.1 29.88 0 12.12 2.7 22.02 8.1 29.7 5.52 7.68 13.26 11.52 23.22 11.52Zm46.08 7.02c-11.64 12.6-27.06 18.9-46.26 18.9s-34.62-6.3-46.26-18.9C7.76 103.56 2 87.48 2 67.92c0-19.56 5.76-35.64 17.28-48.24C30.92 7.08 46.34.78 65.54.78s34.62 6.3 46.26 18.9c11.64 12.6 17.46 28.68 17.46 48.24 0 19.56-5.82 35.64-17.46 48.24Z">
+                            </path>
+                        </svg>
+                    </span>
+                    oduct
+                </h1>
+                <h1 style={{fontSize: '8.5vw', textTransform: 'uppercase', fontWeight: '900', lineHeight: '8.5vw'}}>DESIGN Agency</h1>
+                <p style={{textAlign: 'center', fontWeight: '400', marginTop: '3vh', fontSize: '1vw'}}>We partner with AI & ML businesses, guiding them from series A <br/>to series D and beyond with our expertise in </p>
+                <div id="page1-something" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>Brand design</h4>
+                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>User Experience</h4>
+                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>and</h4>
+                    <h4 style={{fontWeight: '400', fontSize: '1vw', textTransform: 'lowercase', marginTop: '0.5vw', padding: '9px 18px', border: '1px solid hsl(0, 0%, 65%)', borderRadius: '50px'}}>Digital product design</h4>.
+                </div>
+
+            </div>
+        </div>
+    );
 };
 
 export default Home;
