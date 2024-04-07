@@ -42,7 +42,7 @@ const Home = () => {
          id="main "
          className="text-white"
          style={{
-            height: "100vh",
+            height: "auto",
             width: "100%",
             backgroundColor: "#111",
             display: "flex",
@@ -50,21 +50,22 @@ const Home = () => {
             alignItems: "center",
             justifyContent: "center",
             position: "relative",
+            padding:"20px"
 
             //core css resive design write media query
          }}>
          <div
             id="page1"
             style={{
-               height: "100vh",
+               height: "auto",
                width: "100%",
                backgroundColor: "#111",
                display: "flex",
                flexDirection: "column",
                alignItems: "center",
                justifyContent: "center",
-               position: "relative",
-               marginTop: "750px",
+               position: "",
+               marginTop: "10px",
             }}>
             <h1 
             style={{
@@ -181,12 +182,10 @@ const Home = () => {
                   Digital product design
                </h4>
             </div>
-            <div>
+            {/* <div>
                <br />
                <br />
-               <br />
-               <br />
-            </div>
+            </div> */}
          </div>
          <div id="page2">
             <Scroll />
@@ -195,9 +194,9 @@ const Home = () => {
          <div
             id="page3"
             style={{
-               marginTop: "50px",
+               margin: "20px 0px",
                width: "100%",
-               height: "5000px",
+               /*height: "5000px",*/
                //  need mediaquar here
                backgroundColor: "#111",
                position: "relative",
