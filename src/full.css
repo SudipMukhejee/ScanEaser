@@ -105,14 +105,24 @@ nav button svg {
   line-height: 8.5vw;
 }
 
-#page1 h1 svg {
-  height: 6vw;
-  border-radius: 50%;
-  width: 6vw;
-
-  background-color: #0ba34e;
+#page1 h1 #icon1 svg{
+  height: 15px;  
+}
+#page1 h1 #icon1 svg:hover{
+  transform: rotate(15deg) 
 }
 
+@media (min-width: 768px) { 
+  #page1 h1 #icon1 svg{
+    height: 25px;     
+  }
+ }
+
+ @media (min-width: 1024px) { 
+  #page1 h1 #icon1 svg{
+    height: 35px;    
+  }
+ }
 
 #page1 p {
   text-align: center;
