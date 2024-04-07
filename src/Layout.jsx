@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 const Layout = () => {
    return (
       <div>
-         {/* <Navbar/> */}
+         {<Navbar />}
          <Outlet />
          <Footer />
       </div>

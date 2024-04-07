@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollBar } from "./ScrollBar";
+
 import "../full.css";
 
 const Home = () => {
@@ -20,7 +20,6 @@ const Home = () => {
             alignItems: "center",
             justifyContent: "center",
             position: "relative",
-            marginTop: "260px",
 
             //core css resive design write media query
          }}>
@@ -35,6 +34,7 @@ const Home = () => {
                alignItems: "center",
                justifyContent: "center",
                position: "relative",
+               marginTop: "500px",
             }}>
             <h1
                style={{
@@ -55,7 +55,7 @@ const Home = () => {
                         borderRadius: "50%",
                         width: "5vw",
                         backgroundColor: "#0BA34E",
-                        hover:  "transform: rotate(20deg)",
+                        hover: "transform: rotate(20deg)",
                      }}>
                      <path
                         class="g-path"
