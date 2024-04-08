@@ -7,7 +7,11 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{ts,tsx}"],
+  // content: ["./src/**/*.{ts,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "class",
   theme: {
     // rest of the code
@@ -25,7 +29,11 @@ module.exports = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+    addVariablesForColors
+  ],
 };
 
 function addVariablesForColors({ addBase, theme } ) {

@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import {createBrowserRouter,RouterProvider,createRoutesFromElements,Route} from "react-router-dom"
 import Home from './components/home';
-import About from './components/about';
+import About from './components/About';
 import Feature from './components/feature';
 import Layout from './Layout';
 import Signup from './components/Signup'
+
+
 function App() {
 
   const router=createBrowserRouter(
@@ -22,7 +24,6 @@ function App() {
 
   return (
     <RouterProvider router={router}/>
-    
   );
 }
 
