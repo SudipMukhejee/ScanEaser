@@ -4,18 +4,19 @@
 
 
 .container {
-  height: 100vh;
+  
+  padding-top: 50px;
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: #fcfcfc;
+  background-color: black;
 }
 
 .card {
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  width: 600px;
+  width: 50%;
   height: 260px;
   background-color: #ffffff;
   padding: 10px 30px 40px;
@@ -53,7 +54,7 @@
 
 .btn {
   text-decoration: none;
-  background-color: #005af0;
+  background-color: #308826;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -64,7 +65,7 @@
 .btn:hover{
   text-decoration: none;
   background-color: #ffffff;
-  color: #005af0;
+  color: #308826;
   padding: 10px 20px;
   border: none;
   outline: 1px solid #010101;

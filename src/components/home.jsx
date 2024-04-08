@@ -218,7 +218,7 @@ const Home = () => {
          </div>
          <div className="container">
       <div className="card">
-        <h3>Upload Files</h3>
+        
         <div className="drop_box">
           {fileName ? (
             <div className="form">
