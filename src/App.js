@@ -6,7 +6,7 @@ import Home from './components/home';
 import About from './components/about';
 import Feature from './components/feature';
 import Layout from './Layout';
-
+import Signup from './components/Signup'
 function App() {
 
   const router=createBrowserRouter(
@@ -15,6 +15,7 @@ function App() {
         <Route path='' element={<Home/>}/>
         <Route path='about' element={<About/>}/>
         <Route path='feature' element={<Feature/>}/>
+        <Route path='signup' element={<Signup/>}/>
       </Route>
     )
   )
