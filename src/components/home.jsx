@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { gsap } from "gsap";
 import Scroll from "./Scroll";
-
+import Page5 from "./pagef"
 import "../full.css";
 import "./style.css"
 const Home = () => {
@@ -250,6 +250,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Page5/>
       </div>
    );
 };
