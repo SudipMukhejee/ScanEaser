@@ -1,70 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Frontend OCR (Optical Character Recognition) Application - README
 
-## Available Scripts
 
-In the project directory, you can run:
+# Overview
+This repository contains the frontend codebase for an Optical Character Recognition (OCR) application. The application allows users to upload images containing text and extracts the text from the images using OCR technology. This README provides information on how to set up, configure, and use the frontend application.
 
-### `npm start`
+## Run Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+  git clone https://link-to-project
+```
 
-### `npm test`
+Go to the project directory
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  cd my-project
+```
 
-### `npm run build`
+Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the server
 
-### `npm run eject`
+```bash
+  npm  start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Image Upload:** Users can upload images containing text from their local device.
+- **Text Extraction:** The application extracts text from the uploaded images using OCR.
+- **Text Display:** Extracted text is displayed to the user for review and further actions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **User-Friendly Interface:** The frontend provides an intuitive and easy-to-use interface for seamless interaction.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage/Examples
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+- Open the application in your web browser.
+- Click on the "Upload Image" button.
+- Select an image containing text from your local device.
+- Wait for the OCR process to extract text from the image.
+- View the extracted text displayed on the screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are always welcome!
 
-### Making a Progressive Web App
+See `contributing.md` for ways to get started.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Please adhere to this project's `code of conduct`.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and commit them with descriptive commit messages.
+- Push your changes to your fork.
+- Submit a pull request to the main repository.
+## Tech Stack
 
-### Deployment
+**Client:** React, Redux, TailwindCSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Server:** Node, Express
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Configuration
+
+The frontend application may require configuration depending on the backend services used for OCR. Ensure that the backend API endpoints are correctly configured in the frontend codebase to communicate with the OCR services.
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+
