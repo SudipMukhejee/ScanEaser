@@ -24,7 +24,7 @@ Install dependencies
 ```bash
   npm install
 
-yarn install
+  yarn install
 ```
 
 Start the server
