@@ -4,6 +4,7 @@ import Scroll from "./Scroll";
 import Page5 from "./pagef"
 import "../full.css";
 import "./style.css"
+import CardSection from"./CardSection"
 const Home = () => {
    const [fileName, setFileName] = useState('');
    const [email, setEmail] = useState('');
@@ -251,6 +252,7 @@ const Home = () => {
       </div>
     </div>
     <Page5/>
+     <CardSection/>
       </div>
    );
 };
