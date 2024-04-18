@@ -6,7 +6,7 @@ import Home from './components/home';
 import About from './components/About/About';
 import Feature from './components/feature';
 import Layout from './Layout';
-import Signup from './components/Signup'
+import SignUp from './components/SignUp'
 import CardSection from './components/CardSection';
 import ContactForm from './components/About/ContactForm';
 
@@ -20,7 +20,7 @@ function App() {
         <Route path='about' element={<About/>}/>
         <Route path='about/contactus' element={<ContactForm/>}/>
         <Route path='feature' element={<Feature/>}/>
-        <Route path='signup' element={<Signup/>}/>
+        <Route path='signup' element={<SignUp/>}/>
         <Route path='cards' element={<CardSection/>}/>
       </Route>
     )
