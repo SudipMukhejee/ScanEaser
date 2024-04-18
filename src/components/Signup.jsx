@@ -1,84 +1,117 @@
-import React, { useEffect } from "react";
-import Swiper from "swiper";
-import "swiper/swiper-bundle.css";
-import "./Signup.css"
-const Signup = () => {
+import React from 'react'
+import { ArrowRight } from 'lucide-react'
 
-    useEffect(() => {
-        var swiper = new Swiper('.swiper-container', {
-          pagination: '.swiper-pagination',
-          paginationClickable: true,
-          parallax: true,
-          speed: 600,
-          autoplay: 3500,
-          loop: true,
-          grabCursor: true
-        });
-      }, []);
-
+export default function SignUp() {
   return (
-    <div className="login-container">
-      <div className="login-form">
-        <div className="login-form-inner">
-          <div className="logo">
-            <svg height="512" viewBox="0 0 192 192" width="512" xmlns="http://www.w3.org/2000/svg">
-              <path d="m155.109 74.028a4 4 0 0 0 -3.48-2.028h-52.4l8.785-67.123a4.023 4.023 0 0 0 -7.373-2.614l-63.724 111.642a4 4 0 0 0 3.407 6.095h51.617l-6.962 67.224a4.024 4.024 0 0 0 7.411 2.461l62.671-111.63a4 4 0 0 0 .048-4.027z" />
-            </svg>
-          </div>
-          <h1 className="body-tex">Login</h1>
-          <p className="body-text">See your growth and get consulting support!</p>
-
-          <a href="#" className="rounded-button google-login-button">
-            <span className="google-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                {/* Google SVG Path */}
-                <path d="M113.47 309.408L95.648 375.94l-65.139 1.378C11.042 341.211 0 299.9 0 256c0-42.451 10.324-82.483 28.624-117.732h.014L86.63 148.9l25.404 57.644c-5.317 15.501-8.215 32.141-8.215 49.456.002 18.792 3.406 36.797 9.651 53.408z" fill="#fbbb00" />
-            <path d="M507.527 208.176C510.467 223.662 512 239.655 512 256c0 18.328-1.927 36.206-5.598 53.451-12.462 58.683-45.025 109.925-90.134 146.187l-.014-.014-73.044-3.727-10.338-64.535c29.932-17.554 53.324-45.025 65.646-77.911h-136.89V208.176h245.899z" fill="#518ef8" />
-            <path d="M416.253 455.624l.014.014C372.396 490.901 316.666 512 256 512c-97.491 0-182.252-54.491-225.491-134.681l82.961-67.91c21.619 57.698 77.278 98.771 142.53 98.771 28.047 0 54.323-7.582 76.87-20.818l83.383 68.262z" fill="#28b446" />
-            <path d="M419.404 58.936l-82.933 67.896C313.136 112.246 285.552 103.82 256 103.82c-66.729 0-123.429 42.957-143.965 102.724l-83.397-68.276h-.014C71.23 56.123 157.06 0 256 0c62.115 0 119.068 22.126 163.404 58.936z" fill="#f14336" />
-              </svg>
-            </span>
-            <span className="body-text">Sign in with google</span>
-          </a>
-
-          <div className="sign-in-seperator">
-            <span>or Sign in with Email</span>
-          </div>
-
-          <div className="login-form-group">
-            <label htmlFor="email">Email <span className="required-star">*</span></label>
-            <input type="text" placeholder="email@website.com" id="email" />
-          </div>
-          <div className="login-form-group">
-            <label htmlFor="pwd">Password <span className="required-star">*</span></label>
-            <input autoComplete="off" type="password" placeholder="Minimum 8 characters" id="pwd" />
-          </div>
-
-          <div className="login-form-group single-row">
-            <div className="custom-check">
-              <input autoComplete="off" type="checkbox" checked id="remember" />
-              <label htmlFor="remember">Remember me</label>
+    <section className='relative'>
+      <div className="bg-cover w-[80%] mx-auto p-5" style={{backgroundImage:"url('https://t4.ftcdn.net/jpg/04/10/73/07/240_F_410730772_ItUi6E7LMgMN9eUNUuzXWLxUQ4IjHGOQ.jpg')"}}>
+      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div className="relative z-10 flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-2" >
+          <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">Sign up</h2>
+            <p className="mt-2 text-base text-gray-400">
+              Already have an account?{' '}
+              <a
+                href="#"
+                title=""
+                className="font-medium text-blue-600 transition-all duration-200 hover:underline"
+              >
+                Sign In
+              </a>
+            </p>
+            <form action="#" method="POST" className="mt-8">
+              <div className="space-y-5">
+                <div>
+                  <label htmlFor="name" className="text-base font-medium text-white/95">
+                    {' '}
+                    Full Name{' '}
+                  </label>
+                  <div className="mt-2">
+                    <input
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                      type="text"
+                      placeholder="Full Name"
+                      id="name"
+                    ></input>
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="email" className="text-base font-medium text-white/95">
+                    {' '}
+                    Email address{' '}
+                  </label>
+                  <div className="mt-2">
+                    <input
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                      type="email"
+                      placeholder="Email"
+                      id="email"
+                    ></input>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center justify-between">
+                    <label htmlFor="password" className="text-base font-medium text-white/95">
+                      {' '}
+                      Password{' '}
+                    </label>
+                  </div>
+                  <div className="mt-2">
+                    <input
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                      type="password"
+                      placeholder="Password"
+                      id="password"
+                    ></input>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    className="inline-flex w-full items-center justify-center rounded-md bg-blue-600 px-3.5 py-2.5 font-semibold leading-7 text-white duration-200 hover:bg-blue-700"
+                  >
+                    Create Account <ArrowRight className="ml-2" size={16} />
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div className="mt-3 space-y-3">
+              <button
+                type="button"
+                className="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
+              >
+                <span className="mr-2 inline-block">
+                  <svg
+                    className="h-6 w-6 text-rose-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"></path>
+                  </svg>
+                </span>
+                Sign up with Google
+              </button>
+              <button
+                type="button"
+                className="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
+              >
+                <span className="mr-2 inline-block">
+                  <svg
+                    className="h-6 w-6 text-[#2563EB]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                  </svg>
+                </span>
+                Sign up with Facebook
+              </button>
             </div>
-
-            <a href="#" className="link forgot-link">Forgot Password ?</a>
           </div>
-
-          <a href="#" className="rounded-button login-cta">Login</a>
-
-          <div className="register-div">Not registered yet? <a href="#" className="link create-account">Create an account ?</a></div>
         </div>
       </div>
-      <div className="onboarding">
-        <div className="swiper-container">
-          <div className="swiper-wrapper">
-            {/* Swiper slides */}
-            <img src="https://img.freepik.com/free-vector/abstract-flat-design-background_23-2148450082.jpg?size=626&ext=jpg&ga=GA1.1.1286474015.1708934801&semt=sph" alt="" class="banner"></img>
-          </div>
-          <div className="swiper-pagination"></div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Signup;
+    </section>
+  )
+}
