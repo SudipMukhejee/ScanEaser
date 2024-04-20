@@ -78,6 +78,11 @@
     height: 1vw;
     margin: 0 1.2vw;
 }
+.sticky-nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
 @keyframes mobe {
     0% {

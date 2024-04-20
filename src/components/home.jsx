@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { gsap } from "gsap";
 import Scroll from "./Scroll";
-import Page5 from "./pagef"
+import Page5 from "./pagef";
 import "../full.css";
-import "./style.css"
-import CardSection from"./CardSection"
+import "./style.css";
+import CardSection from "./CardSection";
 const Home = () => {
-   const [fileName, setFileName] = useState('');
-   const [email, setEmail] = useState('');
-   
+   const [fileName, setFileName] = useState("");
+   const [email, setEmail] = useState("");
+
    const handleFileChange = (event) => {
-     const file = event.target.files[0];
-     setFileName(file.name);
+      const file = event.target.files[0];
+      setFileName(file.name);
    };
-   
+
    const handleEmailChange = (event) => {
-     setEmail(event.target.value);
+      setEmail(event.target.value);
    };
    const handleClick = () => {
       var page3Center = document.querySelector(".page3-center");
@@ -38,7 +38,7 @@ const Home = () => {
          });
       });
    };
-   
+
    return (
       <div
          id="main "
@@ -52,7 +52,7 @@ const Home = () => {
             alignItems: "center",
             justifyContent: "center",
             position: "relative",
-            padding:"20px"
+            padding: "20px",
 
             //core css resive design write media query
          }}>
@@ -69,44 +69,42 @@ const Home = () => {
                position: "",
                marginTop: "10px",
             }}>
-            <h1 
-            style={{
-               fontSize: '7vw',
-               display:'flex', 
-               textTransform: 'uppercase',
-               fontWeight: '900', 
-               lineHeight: '5vw'
+            <h1
+               style={{
+                  fontSize: "7vw",
+                  display: "flex",
+                  textTransform: "uppercase",
+                  fontWeight: "900",
+                  lineHeight: "5vw",
                }}>
-               Empowering Thr                                                 
-                  <span 
-                  id="icon1" 
+               Empowering Thr
+               <span
+                  id="icon1"
                   className=""
                   style={{
-                     height: '5vw',
-                     display:'flex', 
-                     alignItems:'center', 
-                     borderRadius: '50%', 
-                     width: '5vw', 
-                     backgroundColor: '#0BA34E'
-                     }}>
+                     height: "5vw",
+                     display: "flex",
+                     alignItems: "center",
+                     borderRadius: "50%",
+                     width: "5vw",
+                     backgroundColor: "#0BA34E",
+                  }}>
                   <svg
-                    fill="none"
-                    viewBox="0 0 20 20"
-                    style={{  
-                     padding:'auto', 
-                     margin:'auto', 
-                     alignItems:'center',
-                     borderRadius: '50%' 
+                     fill="none"
+                     viewBox="0 0 20 20"
+                     style={{
+                        padding: "auto",
+                        margin: "auto",
+                        alignItems: "center",
+                        borderRadius: "50%",
                      }}
-                     className="p-auto m-auto items-center bg-green-600 rounded-full hover:rotate-12"
-                    >
-                  <path
-                     fill="#fff"
-                     d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z"
-                  ></path>
+                     className="p-auto m-auto items-center bg-green-600 rounded-full hover:rotate-12">
+                     <path
+                        fill="#fff"
+                        d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z"></path>
                   </svg>
                </span>
-                  ugh
+               ugh
             </h1>
             <h1
                style={{
@@ -217,42 +215,8 @@ const Home = () => {
                <h5>Watch Showreel</h5>
             </button>
          </div>
-         <div className="container">
-      <div className="card">
-        
-        <div className="drop_box">
-          {fileName ? (
-            <div className="form">
-              <h4>{fileName}</h4>
-              <input
-                type="email"
-                placeholder="Enter email to upload file"
-                value={email}
-                onChange={handleEmailChange}
-              />
-              <button className="btn">Upload</button>
-            </div>
-          ) : (
-            <>
-              <header>
-                <h4>Select File here</h4>
-              </header>
-              <p>Files Supported: PDF, TEXT, DOC, DOCX</p>
-              <input
-                type="file"
-                accept=".doc,.docx,.pdf"
-                id="fileID"
-                style={{ display: 'none' }}
-                onChange={handleFileChange}
-              />
-              <label htmlFor="fileID" className="btn">Choose File</label>
-            </>
-          )}
-        </div>
-      </div>
-    </div>
-    <Page5/>
-     <CardSection/>
+         <Page5 />
+         <CardSection />
       </div>
    );
 };
