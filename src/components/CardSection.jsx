@@ -5,28 +5,28 @@ const CardSection = () => {
   const [count, setCount] = useState(0);
   const CardInfo = [
     {
-      data: "$500M",
-      text: "In funding secured owning to our designs",
+      data: "+25%",
+      text: "Increase in User Feedback Ratings",
       cardNo: 1,
     },
     {
-      data: "+1 million",
-      text: "Increase in customer base",
+      data: "+100",
+      text: "New Users",
       cardNo: 2,
     },
     {
-      data: "1 000 000+",
-      text: "Of active marketplace users",
+      data: "500+",
+      text: "Project Downloads",
       cardNo: 3,
     },
     {
-      data: "25 million",
-      text: "Monthly E-commerce visits",
+      data: "+50%",
+      text: "Increase in Engagement",
       cardNo: 4,
     },
     {
-      data: "+300%",
-      text: "Increase in sign-up conversion rate",
+      data: "+20%",
+      text: "Increase in Retention",
       cardNo: 5,
     },
     {
