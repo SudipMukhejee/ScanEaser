@@ -128,65 +128,8 @@ const Home = () => {
                      fontSize: "1.8rem",
                      padding: "10px",
                   }}>
-                  We partner with AI & ML businesses, guiding them from series A{" "}
-                  <br />
-                  to series D and beyond with our expertise in{" "}
+                  Turn images into spoken words effortlessly with our OCR technology. Accessible, clear, and precise.
                </p>
-               <div
-                  id="page1-something"
-                  style={{
-                     display: "flex",
-                     alignItems: "center",
-                     justifyContent: "center",
-                  }}>
-                  <h4
-                     style={{
-                        fontWeight: "400",
-                        fontSize: "1vw",
-                        textTransform: "lowercase",
-                        marginTop: "0.5vw",
-                        padding: "9px 18px",
-                        border: "1px solid hsl(0, 0%, 65%)",
-                        borderRadius: "50px",
-                        marginRight: "8px",
-                     }}>
-                     Brand design
-                  </h4>
-                  <h4
-                     style={{
-                        fontWeight: "400",
-                        fontSize: "1vw",
-                        textTransform: "lowercase",
-                        marginTop: "0.5vw",
-                        padding: "9px 18px",
-                        border: "1px solid hsl(0, 0%, 65%)",
-                        borderRadius: "50px",
-                     }}>
-                     User Experience
-                  </h4>
-                  <h4
-                     style={{
-                        fontWeight: "400",
-                        fontSize: "1vw",
-                        textTransform: "lowercase",
-                        marginTop: "0.5vw",
-                        padding: "9px 8px",
-                     }}>
-                     and
-                  </h4>
-                  <h4
-                     style={{
-                        fontWeight: "400",
-                        fontSize: "1vw",
-                        textTransform: "lowercase",
-                        marginTop: "0.5vw",
-                        padding: "9px 18px",
-                        border: "1px solid hsl(0, 0%, 65%)",
-                        borderRadius: "50px",
-                     }}>
-                     Digital product design
-                  </h4>
-               </div>
             </div>
             <div id="page2">
                <Scroll />
