@@ -7,6 +7,7 @@ import "./style.css";
 import CardSection from "./CardSection";
 import NavBarSection from "./Heronav";
 import Footer from "../components/Footer";
+import Ocr from "./ocr";
 const Home = () => {
    const [fileName, setFileName] = useState("");
    const [email, setEmail] = useState("");
@@ -217,6 +218,7 @@ const Home = () => {
             <CardSection />
          </div>
          <Footer />
+         <Ocr />
       </div>
    );
 };
