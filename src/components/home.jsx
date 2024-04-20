@@ -216,7 +216,7 @@ const Home = () => {
             <Page5 />
             <CardSection />
          </div>
-         <footer />
+         <Footer />
       </div>
    );
 };
