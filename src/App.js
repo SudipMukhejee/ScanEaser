@@ -13,7 +13,7 @@ import ContactForm from './components/About/ContactForm';
 
 
 function App() {
-const  [isLoggedIn,setLogged]
+
   const router=createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<Layout/>}>

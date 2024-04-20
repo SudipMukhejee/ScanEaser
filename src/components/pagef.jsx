@@ -28,10 +28,10 @@ function Page5() {
                                 </div>
                             </summary>
                             <div id="page-container">
-                                <Page5Elem title="UX Research" />
-                                <Page5Elem title="UX Design" />
-                                <Page5Elem title="UI Design" />
-                                <Page5Elem title="UX Audit" />
+                                <Page5Elem title="UX Research" content="Content " />
+                                <Page5Elem title="UX Design" content="Content for UX Design" />
+                                <Page5Elem title="UI Design" content="Content for UI Design" />
+                                <Page5Elem title="UX Audit" content="Content for UX Audit" />
                             </div>
                         </details>
                     </div>
@@ -47,10 +47,10 @@ function Page5() {
                                 </div>
                             </summary>
                             <div id="page-container">
-                                <Page5Elem title="UX Research" />
-                                <Page5Elem title="UX Design" />
-                                <Page5Elem title="UI Design" />
-                                <Page5Elem title="UX Audit" />
+                                <Page5Elem title="UX Research" content="Content for UX Research" />
+                                <Page5Elem title="UX Design" content="Content for UX Design" />
+                                <Page5Elem title="UI Design" content="Content for UI Design" />
+                                <Page5Elem title="UX Audit" content="Content for UX Audit" />
                             </div>
                         </details>
                     </div>
@@ -60,17 +60,12 @@ function Page5() {
     );
 }
 
-function Page5Elem({ title }) {
+function Page5Elem({ title, content }) {
     return (
         <div className="page5-elem">
             <div className="over"></div>
             <h3>{title}</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequatur
-                error, enim in iure distinctio, pariatur quibusdam nobis dolor laborum nulla
-                animi mollitia voluptas odit, praesentium magni. Exercitationem, tenetur? Illum,
-                ducimus.
-            </p>
+            <p>{content}</p>
             <i className="ri-arrow-right-up-line"></i>
         </div>
     );
